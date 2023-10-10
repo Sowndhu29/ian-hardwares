@@ -1,0 +1,34 @@
+.landing-page {
+    background-color: var(--secondary-bg-color-light);
+    display: flex;
+    align-items: center;
+}
+
+.landing-page .rows {
+    width: 100%;
+    height: 70%;
+    /* border: 1px solid red; */
+}
+
+.landing-page .rows > div {
+    /* border: 1px solid red; */
+    display: flex;
+}
+
+.landing-page .content{
+    /* border: 1px solid green; */
+    margin: auto;
+    width: 70%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.landing-page .carousel{
+    border: 1px solid grey;
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    background-color: white;
+}

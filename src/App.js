@@ -1,24 +1,46 @@
-import logo from './logo.svg';
+import React from 'react';
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { ConfigProvider } from 'antd';
+import UrlContext, { urls } from './components/common/context/urlContext';
 import './App.css';
 
+import LandingPage from './components/landingPage/landingPage';
+import SignInPage from './components/auth/signIn';
+import SignUpPage from './components/auth/signUp';
+
 function App() {
+
+  const router = createBrowserRouter([
+    {
+      path: "/",
+      element: <LandingPage />,
+      children: [],
+    },
+    {
+      path: "sign-in",
+      element: <SignInPage />,
+    },
+    {
+      path: "sign-up",
+      element: <SignUpPage />,
+    },
+  ], { basename: "/" });
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <React.Fragment>
+      <ConfigProvider
+        theme={{
+          token: {
+            colorPrimary: '#000',
+            borderRadius: 5,
+          },
+        }}
+      >
+        <UrlContext.Provider value={urls}>
+          <RouterProvider router={router} />
+        </UrlContext.Provider>
+      </ConfigProvider>
+    </React.Fragment >
   );
 }
 

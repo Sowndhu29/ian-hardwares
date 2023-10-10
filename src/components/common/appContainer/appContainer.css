@@ -1,0 +1,14 @@
+.app-banner-layout {
+    height: 3rem;
+    width: 100vw;
+}
+
+.app-page-layout {
+    height: calc(100vh - 3rem);
+    width: 100vw;
+}
+
+.app-page-layout>div {
+    height: 100%;
+    width: 100%;
+}
