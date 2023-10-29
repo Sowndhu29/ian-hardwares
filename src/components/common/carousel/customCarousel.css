@@ -1,0 +1,9 @@
+.carousel-dots {
+    justify-content: flex-start !important;
+    left: 10px !important;
+}
+
+.ant-carousel .slick-dots li button {
+    border-radius: 50%;
+    border: 1px solid black;
+}

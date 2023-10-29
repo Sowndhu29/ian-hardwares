@@ -1,0 +1,20 @@
+[
+    {
+        "title": "Hardwares",
+        "content": "",
+        "pageId": "stockList",
+        "actionText": "See More"
+    },
+    {
+        "title": "Plumbing",
+        "content": "",
+        "pageId": "stockList",
+        "actionText": "See More"
+    },
+    {
+        "title": "Electricals",
+        "content": "",
+        "pageId": "stockList",
+        "actionText": "See More"
+    }
+]

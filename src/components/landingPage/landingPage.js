@@ -4,6 +4,7 @@ import AppContainer from "../common/appContainer/appContainer";
 import UrlContext from "../common/context/urlContext";
 import { useNavigate } from "react-router-dom";
 import './landingPage.css';
+import CustomCarousel from '../common/carousel/customCarousel';
 
 const LandingPage = (props) => {
 
@@ -11,7 +12,7 @@ const LandingPage = (props) => {
     const navigate = useNavigate();
 
     return (
-        <AppContainer>
+        <AppContainer landingPage>
             <div className="landing-page">
                 <Row className="rows">
                     <Col
@@ -28,7 +29,7 @@ const LandingPage = (props) => {
                                 <Button
                                     type="primary"
                                     size="large"
-                                    onClick={() => navigate(urls.signIn, {replace: true})}
+                                    onClick={() => navigate(urls.home)}
                                 >
                                     Start Exploring
                                 </Button>
@@ -36,7 +37,9 @@ const LandingPage = (props) => {
                         </div>
                     </Col>
                     <Col xs={{ span: 24, order: 1 }} lg={{ span: 12, order: 2 }}>
-                        <div className="carousel"></div>
+                        <div className="carousel">
+                            <CustomCarousel />
+                        </div>
                     </Col>
                 </Row>
             </div>

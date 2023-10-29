@@ -1,43 +1,19 @@
-import React from 'react';
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { ConfigProvider } from 'antd';
-import UrlContext, { urls } from './components/common/context/urlContext';
+import React from 'react';
 import './App.css';
-
-import LandingPage from './components/landingPage/landingPage';
-import SignInPage from './components/auth/signIn';
-import SignUpPage from './components/auth/signUp';
+import UrlContext, { urls } from './components/common/context/urlContext';
+import Router from './router';
+import DefaultTheme from './components/common/theme/defaultTheme.json'
 
 function App() {
-
-  const router = createBrowserRouter([
-    {
-      path: "/",
-      element: <LandingPage />,
-      children: [],
-    },
-    {
-      path: "sign-in",
-      element: <SignInPage />,
-    },
-    {
-      path: "sign-up",
-      element: <SignUpPage />,
-    },
-  ], { basename: "/" });
 
   return (
     <React.Fragment>
       <ConfigProvider
-        theme={{
-          token: {
-            colorPrimary: '#000',
-            borderRadius: 5,
-          },
-        }}
+        theme={DefaultTheme}
       >
         <UrlContext.Provider value={urls}>
-          <RouterProvider router={router} />
+          <Router />
         </UrlContext.Provider>
       </ConfigProvider>
     </React.Fragment >

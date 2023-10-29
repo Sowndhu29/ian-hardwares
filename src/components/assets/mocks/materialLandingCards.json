@@ -1,0 +1,23 @@
+[
+    {
+        "title": "Hardwares",
+        "content": "",
+        "pageId": "materialList",
+        "isAdmin": true,
+        "actionText": "See More"
+    },
+    {
+        "title": "Plumbing",
+        "content": "",
+        "pageId": "materialList",
+        "isAdmin": false,
+        "actionText": "See More"
+    },
+    {
+        "title": "Electricals",
+        "content": "",
+        "pageId": "materialList",
+        "isAdmin": false,
+        "actionText": "See More"
+    }
+]

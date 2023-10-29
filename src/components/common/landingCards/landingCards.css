@@ -1,0 +1,43 @@
+.landing-cards .heading {
+    width: 100%;
+    height: 30%;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.landing-cards .cards {
+    width: 80%;
+    height: 60%;
+    margin: auto;
+}
+
+.landing-cards .card {
+    width: 17rem;
+    height: 28rem;
+}
+
+.landing-cards .ant-card-cover{
+    width: 17rem;
+    height: 17rem;
+    background: black;
+}
+
+.landing-cards .ant-card-body{
+    height: calc(100% - 17rem);
+}
+
+.landing-cards .card-action {
+    display: flex;
+    height: 2rem;
+    align-items: center;
+    font-weight: 600;
+    position: absolute;
+    bottom: 15px;
+}
+
+.landing-cards .card-action svg {
+    margin-left: 5px;
+}

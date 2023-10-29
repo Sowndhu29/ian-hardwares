@@ -1,0 +1,43 @@
+.home-page .heading {
+    width: 100%;
+    height: 30%;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-page .cards {
+    width: 80%;
+    height: 60%;
+    margin: auto;
+}
+
+.home-page .card {
+    width: 17rem;
+    height: 28rem;
+}
+
+.home-page .ant-card-cover{
+    width: 17rem;
+    height: 17rem;
+    background: black;
+}
+
+.home-page .ant-card-body{
+    height: calc(100% - 17rem);
+}
+
+.home-page .card-action {
+    display: flex;
+    height: 2rem;
+    align-items: center;
+    font-weight: 600;
+    position: absolute;
+    bottom: 15px;
+}
+
+.home-page .card-action svg {
+    margin-left: 5px;
+}

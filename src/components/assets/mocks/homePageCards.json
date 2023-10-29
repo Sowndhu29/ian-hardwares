@@ -1,0 +1,20 @@
+[
+    {
+        "title": "Stocks",
+        "content": "Explore Stocks",
+        "pageId": "stocks",
+        "actionText": "See More"
+    },
+    {
+        "title": "Material Catalogue",
+        "content": "Check Material Catalogue",
+        "pageId": "materialCatalogue",
+        "actionText": "See More"
+    },
+    {
+        "title": "Vendors",
+        "content": "Add and Edit Vendors",
+        "pageId": "vendors",
+        "actionText": "See More"
+    }
+]

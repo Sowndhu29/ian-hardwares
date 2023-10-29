@@ -1,0 +1,245 @@
+{
+    "columns": [
+        {
+            "title": "No",
+            "dataIndex": "vendorId",
+            "key": "vendorId",
+            "width": 100
+        },
+        {
+            "title": "Name",
+            "dataIndex": "name",
+            "key": "name",
+            "width": 200
+        },
+        {
+            "title": "Billing Address",
+            "dataIndex": "billingAddress",
+            "key": "billingAddress",
+            "width": 250
+        },
+        {
+            "title": "Area",
+            "dataIndex": "area",
+            "key": "area",
+            "width": 200
+        },
+        {
+            "title": "Contact No",
+            "key": "contact",
+            "dataIndex": "contact",
+            "width": 200
+        },
+        {
+            "title": "GST No.",
+            "key": "gst",
+            "dataIndex": "gst",
+            "width": 200
+        },
+        {
+            "title": "Last Modified",
+            "key": "lastModified",
+            "dataIndex": "lastModified",
+            "width": 100
+        },
+        {
+            "title": "",
+            "key": "action",
+            "fixed": "right",
+            "width": 150,
+            "align" : "center"
+        }
+    ],
+    "dataSource": [
+        {
+            "key": "1",
+            "vendorId": "12345",
+            "name": "John Brown",
+            "billingAddress": "1/112, Main Road, 7th Street, Chennai - 600098",
+            "area": "KK Nagar",
+            "contact": "+91 123456789",
+            "gst": "12345",
+            "lastModified": "11/11/2023"
+        },
+        {
+            "key": "2",
+            "vendorId": "12345",
+            "name": "John Brown",
+            "billingAddress": "1/112, Main Road, 7th Street, Chennai - 600098",
+            "area": "KK Nagar",
+            "contact": "+91 123456789",
+            "gst": "12345",
+            "lastModified": "11/11/2023"
+        },
+        {
+            "key": "3",
+            "vendorId": "12345",
+            "name": "John Brown",
+            "billingAddress": "1/112, Main Road, 7th Street, Chennai - 600098",
+            "area": "KK Nagar",
+            "contact": "+91 123456789",
+            "gst": "12345",
+            "lastModified": "11/11/2023"
+        },
+        {
+            "key": "4",
+            "vendorId": "12345",
+            "name": "John Brown",
+            "billingAddress": "1/112, Main Road, 7th Street, Chennai - 600098",
+            "area": "KK Nagar",
+            "contact": "+91 123456789",
+            "gst": "12345",
+            "lastModified": "11/11/2023"
+        },
+        {
+            "key": "5",
+            "vendorId": "12345",
+            "name": "John Brown",
+            "billingAddress": "1/112, Main Road, 7th Street, Chennai - 600098",
+            "area": "KK Nagar",
+            "contact": "+91 123456789",
+            "gst": "12345",
+            "lastModified": "11/11/2023"
+        },
+        {
+            "key": "6",
+            "vendorId": "12345",
+            "name": "John Brown",
+            "billingAddress": "1/112, Main Road, 7th Street, Chennai - 600098",
+            "area": "KK Nagar",
+            "contact": "+91 123456789",
+            "gst": "12345",
+            "lastModified": "11/11/2023"
+        },
+        {
+            "key": "7",
+            "vendorId": "12345",
+            "name": "John Brown",
+            "billingAddress": "1/112, Main Road, 7th Street, Chennai - 600098",
+            "area": "KK Nagar",
+            "contact": "+91 123456789",
+            "gst": "12345",
+            "lastModified": "11/11/2023"
+        },
+        {
+            "key": "8",
+            "vendorId": "12345",
+            "name": "John Brown",
+            "billingAddress": "1/112, Main Road, 7th Street, Chennai - 600098",
+            "area": "KK Nagar",
+            "contact": "+91 123456789",
+            "gst": "12345",
+            "lastModified": "11/11/2023"
+        },
+        {
+            "key": "9",
+            "vendorId": "12345",
+            "name": "John Brown",
+            "billingAddress": "1/112, Main Road, 7th Street, Chennai - 600098",
+            "area": "KK Nagar",
+            "contact": "+91 123456789",
+            "gst": "12345",
+            "lastModified": "11/11/2023"
+        },
+        {
+            "key": "10",
+            "vendorId": "12345",
+            "name": "John Brown",
+            "billingAddress": "1/112, Main Road, 7th Street, Chennai - 600098",
+            "area": "KK Nagar",
+            "contact": "+91 123456789",
+            "gst": "12345",
+            "lastModified": "11/11/2023"
+        },
+        {
+            "key": "11",
+            "vendorId": "12345",
+            "name": "John Brown",
+            "billingAddress": "1/112, Main Road, 7th Street, Chennai - 600098",
+            "area": "KK Nagar",
+            "contact": "+91 123456789",
+            "gst": "12345",
+            "lastModified": "11/11/2023"
+        },
+        {
+            "key": "12",
+            "vendorId": "12345",
+            "name": "John Brown",
+            "billingAddress": "1/112, Main Road, 7th Street, Chennai - 600098",
+            "area": "KK Nagar",
+            "contact": "+91 123456789",
+            "gst": "12345",
+            "lastModified": "11/11/2023"
+        },
+        {
+            "key": "13",
+            "vendorId": "12345",
+            "name": "John Brown",
+            "billingAddress": "1/112, Main Road, 7th Street, Chennai - 600098",
+            "area": "KK Nagar",
+            "contact": "+91 123456789",
+            "gst": "12345",
+            "lastModified": "11/11/2023"
+        },
+        {
+            "key": "14",
+            "vendorId": "12345",
+            "name": "John Brown",
+            "billingAddress": "1/112, Main Road, 7th Street, Chennai - 600098",
+            "area": "KK Nagar",
+            "contact": "+91 123456789",
+            "gst": "12345",
+            "lastModified": "11/11/2023"
+        },
+        {
+            "key": "15",
+            "vendorId": "12345",
+            "name": "John Brown",
+            "billingAddress": "1/112, Main Road, 7th Street, Chennai - 600098",
+            "area": "KK Nagar",
+            "contact": "+91 123456789",
+            "gst": "12345",
+            "lastModified": "11/11/2023"
+        },
+        {
+            "key": "16",
+            "vendorId": "12345",
+            "name": "John Brown",
+            "billingAddress": "1/112, Main Road, 7th Street, Chennai - 600098",
+            "area": "KK Nagar",
+            "contact": "+91 123456789",
+            "gst": "12345",
+            "lastModified": "11/11/2023"
+        },
+        {
+            "key": "17",
+            "vendorId": "12345",
+            "name": "John Brown",
+            "billingAddress": "1/112, Main Road, 7th Street, Chennai - 600098",
+            "area": "KK Nagar",
+            "contact": "+91 123456789",
+            "gst": "12345",
+            "lastModified": "11/11/2023"
+        },
+        {
+            "key": "18",
+            "vendorId": "12345",
+            "name": "John Brown",
+            "billingAddress": "1/112, Main Road, 7th Street, Chennai - 600098",
+            "area": "KK Nagar",
+            "contact": "+91 123456789",
+            "gst": "12345",
+            "lastModified": "11/11/2023"
+        },
+        {
+            "key": "19",
+            "vendorId": "12345",
+            "name": "John Brown",
+            "billingAddress": "1/112, Main Road, 7th Street, Chennai - 600098",
+            "area": "KK Nagar",
+            "contact": "+91 123456789",
+            "gst": "12345",
+            "lastModified": "11/11/2023"
+        }
+    ]
+}

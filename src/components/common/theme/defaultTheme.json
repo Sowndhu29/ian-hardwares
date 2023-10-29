@@ -1,0 +1,13 @@
+{
+    "token": {
+        "colorPrimary": "#000",
+        "borderRadius": 5
+    },
+    "components": {
+        "Carousel": {
+            "dotActiveWidth": 10,
+            "dotWidth": 10,
+            "dotHeight": 10
+        }
+    }
+}

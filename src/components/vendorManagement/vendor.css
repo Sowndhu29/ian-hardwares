@@ -1,0 +1,34 @@
+.vendor-list-container {
+    /* border: 1px solid red; */
+    padding: 0 20px;
+    margin-bottom: unset !important;
+    height: 100% !important;
+}
+
+.vendor-list-container .banner {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    font-size: 32px;
+    font-weight: 400;
+    margin: 20px 0;
+}
+
+.vendor-list-container .banner div {
+    display: flex;
+    align-items: center;
+}
+
+.modal .modal-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.5rem;
+}
+
+.modal .ant-modal-body {
+    overflow-y: scroll;
+    max-height: 80vh;
+    padding-top: 20px;
+}

@@ -1,0 +1,175 @@
+{
+    "columns": [
+        {
+            "title": "Ian Part No",
+            "dataIndex": "ianId",
+            "key": "ianId",
+            "width": 100
+        },
+        {
+            "title": "Part No",
+            "dataIndex": "partNo",
+            "key": "partNo",
+            "width": 100
+        },
+        {
+            "title": "Part Name",
+            "dataIndex": "partName",
+            "key": "partName",
+            "width": 150
+        },
+        {
+            "title": "category",
+            "dataIndex": "category",
+            "key": "category",
+            "width": 100
+        },
+        {
+            "title": "Price/Unit",
+            "key": "pricePu",
+            "dataIndex": "pricePu",
+            "width": 100
+        },
+        {
+            "title": "MOQ",
+            "key": "moq",
+            "dataIndex": "moq",
+            "width": 100
+        },
+        {
+            "title": "Box Price",
+            "key": "boxPrice",
+            "dataIndex": "boxPrice",
+            "width": 100
+        },
+        {
+            "title": "Std Disc",
+            "key": "stdDisc",
+            "dataIndex": "stdDisc",
+            "width": 100
+        },
+        {
+            "title": "Final Disc",
+            "key": "finalDisc",
+            "dataIndex": "finalDisc",
+            "width": 100
+        },
+        {
+            "title": "Qty",
+            "key": "quantity",
+            "dataIndex": "quantity",
+            "width": 100
+        },
+        {
+            "title": "Total Price",
+            "key": "totalPrice",
+            "dataIndex": "totalPrice",
+            "width": 100
+        },
+        {
+            "title": "Vendor",
+            "key": "vendor",
+            "dataIndex": "vendor",
+            "width": 100
+        },
+        {
+            "title": "",
+            "key": "action",
+            "fixed": "right",
+            "width": 150,
+            "align" : "center"
+        }
+    ],
+    "dataSource": [
+        {
+            "key": "1",
+            "ianId": "12414",
+            "partNo": "12345",
+            "partName": "Fevicol",
+            "category": "consumables",
+            "pricePu": "250",
+            "moq": "400",
+            "boxPrice": "1000",
+            "stdDisc": "10%",
+            "finalDisc": "10%",
+            "quantity": "10",
+            "totalPrice": "900",
+            "vendor": "200"
+        },
+        {
+            "key": "2",
+            "ianId": "12414",
+            "partNo": "12345",
+            "partName": "Fevicol",
+            "category": "consumables",
+            "pricePu": "250",
+            "moq": "400",
+            "boxPrice": "1000",
+            "stdDisc": "10%",
+            "finalDisc": "10%",
+            "quantity": "10",
+            "totalPrice": "900",
+            "vendor": "200"
+        },
+        {
+            "key": "3",
+            "ianId": "12414",
+            "partNo": "12345",
+            "partName": "Fevicol",
+            "category": "consumables",
+            "pricePu": "250",
+            "moq": "400",
+            "boxPrice": "1000",
+            "stdDisc": "10%",
+            "finalDisc": "10%",
+            "quantity": "10",
+            "totalPrice": "900",
+            "vendor": "200"
+        },
+        {
+            "key": "4",
+            "ianId": "12414",
+            "partNo": "12345",
+            "partName": "Fevicol",
+            "category": "consumables",
+            "pricePu": "250",
+            "moq": "400",
+            "boxPrice": "1000",
+            "stdDisc": "10%",
+            "finalDisc": "10%",
+            "quantity": "10",
+            "totalPrice": "900",
+            "vendor": "200"
+        },
+        {
+            "key": "5",
+            "ianId": "12414",
+            "partNo": "12345",
+            "partName": "Fevicol",
+            "category": "consumables",
+            "pricePu": "250",
+            "moq": "400",
+            "boxPrice": "1000",
+            "stdDisc": "10%",
+            "finalDisc": "10%",
+            "quantity": "10",
+            "totalPrice": "900",
+            "vendor": "200"
+        },
+        {
+            "key": "6",
+            "ianId": "12414",
+            "partNo": "12345",
+            "partName": "Fevicol",
+            "category": "consumables",
+            "pricePu": "250",
+            "moq": "400",
+            "boxPrice": "1000",
+            "stdDisc": "10%",
+            "finalDisc": "10%",
+            "quantity": "10",
+            "totalPrice": "900",
+            "vendor": "200"
+        }
+    ]
+}
