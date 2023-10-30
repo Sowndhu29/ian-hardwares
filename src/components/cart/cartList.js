@@ -1,24 +1,28 @@
 import { SaveOutlined } from '@ant-design/icons';
-import { Button, Modal, Space, Divider } from "antd";
-import React, { useEffect, useState } from "react";
-import MaterialListMock from '../assets/mocks/materialList.json';
+import { Button, Divider, Modal, Space } from "antd";
+import React, { useEffect, useState, useContext } from "react";
+import { useLocation } from 'react-router-dom';
+import CartListMock from "../assets/mocks/cartList.json";
 import AppContainer from "../common/appContainer/appContainer";
 import CustomList from "../common/customList/customList";
-import './material.css';
-import MaterialForm from './materialForm';
-import { useLocation } from 'react-router-dom';
+import "./cart.css";
+import CartForm from "./cartForm";
+import { useNavigate } from "react-router-dom";
+import UrlContext from '../common/context/urlContext';
 
-const MaterialList = (props) => {
+const CartList = (props) => {
 
     const location = useLocation();
+    const urls = useContext(UrlContext);
+    const navigate = useNavigate();
     const stateData = location.state;
 
     const [isFormOpen, setIsFormOpen] = useState(false);
-    const [formData, setFormData] = useState({})
+    const [formData, setFormData] = useState({});
 
-    const handleAddClick = () => {
-        setFormData({});
-        setIsFormOpen(true)
+    const handlePlaceOrderClick = () => {
+        // setFormData({});
+        // setIsFormOpen(true)
     }
 
     const handleEditClick = (record) => {
@@ -44,7 +48,7 @@ const MaterialList = (props) => {
             <React.Fragment>
                 <div className='modal-header'>
                     <div>
-                        Material
+                        Edit Cart
                     </div>
                     <div>
                         <Space>
@@ -69,27 +73,32 @@ const MaterialList = (props) => {
 
     return (
         <React.Fragment>
-            <AppContainer bgPrimary showCart>
+            <AppContainer bgPrimary>
                 <div className="vendor-list-container">
                     <div className="banner">
-                        <div>Material</div>
+                        <div>View Cart</div>
                         <div>
-                            <Button
-                                type="primary"
-                                onClick={handleAddClick}
-                            >
-                                Add Item
-                            </Button>
+                            <Space>
+                                <Button type="text">
+                                    Clear Cart
+                                </Button>
+                                <Button
+                                    type="primary"
+                                    onClick={() => navigate({ pathname: urls.order })}
+                                >
+                                    Place Order
+                                </Button>
+                            </Space>
                         </div>
                     </div>
                     <div>
                         <CustomList
                             editList={true}
                             deleteList={true}
-                            columns={MaterialListMock?.columns ?? []}
-                            dataSource={MaterialListMock?.dataSource ?? []}
+                            columns={CartListMock?.columns ?? []}
+                            dataSource={CartListMock?.dataSource ?? []}
                             handleEditClick={handleEditClick}
-                            expandableRow={true}
+                            expandableRow={false}
                             tableProps={{
                                 scroll: {
                                     x: '100%',
@@ -120,7 +129,7 @@ const MaterialList = (props) => {
                         }}
                         destroyOnClose
                     >
-                        <MaterialForm formData={formData} />
+                        <CartForm formData={formData} />
                     </Modal>
                 </div>
             </AppContainer>
@@ -128,4 +137,4 @@ const MaterialList = (props) => {
     )
 }
 
-export default MaterialList
+export default CartList;

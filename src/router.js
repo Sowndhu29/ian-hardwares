@@ -10,6 +10,8 @@ import StockLanding from './components/stockManagement/stockLanding';
 import StockList from './components/stockManagement/stockList';
 import MaterialLanding from './components/materialManagement/materialLanding';
 import MaterialList from './components/materialManagement/materialList';
+import CartList from './components/cart/cartList';
+import PurchaseOrder from './components/cart/purchaseOrder';
 
 const Router = () => {
 
@@ -50,6 +52,14 @@ const Router = () => {
         {
             path: urls.materialList,
             element: <MaterialList/>,
+        },
+        {
+            path: urls.cart,
+            element: <CartList/>,
+        },
+        {
+            path: urls.order,
+            element: <PurchaseOrder/>,
         },
     ], { basename: '/' });
 

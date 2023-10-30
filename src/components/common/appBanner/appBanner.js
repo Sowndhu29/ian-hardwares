@@ -2,11 +2,12 @@ import React, { useContext } from "react";
 import { Button, Space } from 'antd';
 import UrlContext from "../context/urlContext";
 import { useNavigate } from "react-router-dom";
-import './appBanner.css'
+import './appBanner.css';
+import { ShoppingCartOutlined } from '@ant-design/icons'
 
 const AppBanner = (props) => {
 
-    const { children, landingPage } = props;
+    const { children, landingPage, showCart } = props;
     const urls = useContext(UrlContext);
     const navigate = useNavigate();
 
@@ -32,7 +33,22 @@ const AppBanner = (props) => {
                     >
                         Sign Up
                     </Button>
-                </Space> : "Hi Alfred"}
+                </Space> :
+                    <Space>
+                        {showCart ?
+                            <Space>
+                                <Button
+                                    type="text"
+                                    icon={<ShoppingCartOutlined />}
+                                    onClick={() => navigate(urls.cart)}
+                                >
+                                    Cart
+                                </Button>
+                            </Space> :
+                            ""
+                        }
+                        Hi Alfred
+                    </Space>}
             </div>
         </div>
     )

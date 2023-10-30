@@ -9,7 +9,9 @@ export const urls = {
     stockList: '/stock-list',
     materialCatalogue: '/material-catalogue',
     materialList: '/material-list',
-    vendors: '/vendors'
+    vendors: '/vendors',
+    cart: '/cart',
+    order: '/purchase-order'
 }
 
 const UrlContext = createContext(urls);

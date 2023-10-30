@@ -3,11 +3,11 @@ import AppBanner from "../appBanner/appBanner";
 import './appContainer.css';
 
 const AppContainer = (props) => {
-    const { children, bgPrimary, landingPage } = props;
+    const { children, bgPrimary, landingPage, showCart } = props;
     return (
         <React.Fragment>
             <div className="app-banner-layout">
-                <AppBanner landingPage={landingPage}/>
+                <AppBanner landingPage={landingPage} showCart={showCart}/>
             </div>
             <div 
             className="app-page-layout"
