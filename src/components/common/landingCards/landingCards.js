@@ -13,6 +13,11 @@ const LandingCards = (props) => {
     const navigate = useNavigate();
     const cardData = props?.cardData;
 
+    const handleNavigate = (item) =>{
+        const path = item?.isList ? (urls[item?.pageId] + `/${item?.title}`) : (urls[item?.pageId] ?? urls?.home)
+        return navigate(path, {state: {urlData: item}})
+    }
+
     return (
         <React.Fragment>
             <div className="landing-cards">
@@ -34,10 +39,7 @@ const LandingCards = (props) => {
                                     className="card"
                                     hoverable
                                     cover={<div />}
-                                    onClick={() => navigate({
-                                        pathname: urls[item?.pageId] ?? urls?.home,
-                                        state: { data: JSON.stringify(item) }
-                                    })}
+                                    onClick={() => handleNavigate(item)}
                                 >
                                     <Meta
                                         title={item?.title}

@@ -1,5 +1,5 @@
 import { DeleteOutlined, EditOutlined } from '@ant-design/icons';
-import { Space, Table } from 'antd';
+import { Space, Table, Button } from 'antd';
 import React, { useContext, useMemo } from "react";
 import { useNavigate } from "react-router-dom";
 import UrlContext from "../context/urlContext";
@@ -15,6 +15,7 @@ const CustomList = (props) => {
         tableProps,
         editList,
         deleteList,
+        addToCart,
         handleEditClick,
         expandableRow
     } = props;
@@ -37,6 +38,14 @@ const CustomList = (props) => {
                         className={'action-icons'}
                         onClick={() => navigate(urls.home)}
                     />
+                }
+                {addToCart &&
+                    <Button
+                        type="text"
+                        onClick={() => navigate(urls?.cart)}
+                    >
+                        Add to Cart
+                    </Button>
                 }
             </Space>
         )

@@ -11,7 +11,7 @@ import { useLocation } from 'react-router-dom';
 const MaterialList = (props) => {
 
     const location = useLocation();
-    const stateData = location.state;
+    const { urlData } = location.state || {};
 
     const [isFormOpen, setIsFormOpen] = useState(false);
     const [formData, setFormData] = useState({})
@@ -36,15 +36,15 @@ const MaterialList = (props) => {
     }
 
     useEffect(() => {
-        console.log('stateData', stateData)
-    }, [stateData])
+        console.log('urlData', urlData)
+    }, [urlData])
 
     const modalTitle = () => {
         return (
             <React.Fragment>
                 <div className='modal-header'>
                     <div>
-                        Material
+                        {urlData?.title}
                     </div>
                     <div>
                         <Space>
@@ -69,27 +69,30 @@ const MaterialList = (props) => {
 
     return (
         <React.Fragment>
-            <AppContainer bgPrimary showCart>
+            <AppContainer bgPrimary showCart={!urlData?.isAdmin}>
                 <div className="vendor-list-container">
                     <div className="banner">
-                        <div>Material</div>
-                        <div>
-                            <Button
-                                type="primary"
-                                onClick={handleAddClick}
-                            >
-                                Add Item
-                            </Button>
-                        </div>
+                        <div>{urlData?.title}</div>
+                        {urlData?.isAdmin &&
+                            <div>
+                                <Button
+                                    type="primary"
+                                    onClick={handleAddClick}
+                                >
+                                    Add Item
+                                </Button>
+                            </div>
+                        }
                     </div>
                     <div>
                         <CustomList
-                            editList={true}
-                            deleteList={true}
+                            editList={urlData?.isAdmin}
+                            deleteList={urlData?.isAdmin}
+                            addToCart={!urlData?.isAdmin}
                             columns={MaterialListMock?.columns ?? []}
                             dataSource={MaterialListMock?.dataSource ?? []}
                             handleEditClick={handleEditClick}
-                            expandableRow={true}
+                            // expandableRow={true}
                             tableProps={{
                                 scroll: {
                                     x: '100%',

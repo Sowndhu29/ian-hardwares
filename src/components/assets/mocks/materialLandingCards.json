@@ -4,20 +4,23 @@
         "content": "",
         "pageId": "materialList",
         "isAdmin": true,
-        "actionText": "See More"
+        "actionText": "See More",
+        "isList": true
     },
     {
         "title": "Plumbing",
         "content": "",
         "pageId": "materialList",
         "isAdmin": false,
-        "actionText": "See More"
+        "actionText": "See More",
+        "isList": true
     },
     {
         "title": "Electricals",
         "content": "",
         "pageId": "materialList",
         "isAdmin": false,
-        "actionText": "See More"
+        "actionText": "See More",
+        "isList": true
     }
 ]

@@ -5,11 +5,16 @@ import stockListMock from '../assets/mocks/stockList.json';
 import AppContainer from "../common/appContainer/appContainer";
 import CustomList from "../common/customList/customList";
 import './stock.css';
+import { useLocation } from 'react-router-dom';
 // import VendorForm from './vendorForm';
 
 const StockList = (props) => {
+
+    const location = useLocation();
+    const { urlData } = location.state || {};
+
     const [isFormOpen, setIsFormOpen] = useState(false);
-    const [formData, setFormData] = useState({})
+    const [formData, setFormData] = useState({});
 
     const handleAddClick = () => {
         setFormData({});
@@ -35,7 +40,7 @@ const StockList = (props) => {
             <React.Fragment>
                 <div className='modal-header'>
                     <div>
-                        Vendor
+                        {urlData?.title}
                     </div>
                     <div>
                         <Space>
@@ -63,7 +68,7 @@ const StockList = (props) => {
             <AppContainer bgPrimary>
                 <div className="vendor-list-container">
                     <div className="banner">
-                        <div>Stock</div>
+                        <div>{urlData?.title}</div>
                         <div>
                             {/* <Button
                                 type="primary"

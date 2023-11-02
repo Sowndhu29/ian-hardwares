@@ -42,7 +42,7 @@ const Router = () => {
             element: <StockLanding />,
         },
         {
-            path: urls.stockList,
+            path: urls.stockList + '/:type',
             element: <StockList/>,
         },
         {
@@ -50,7 +50,7 @@ const Router = () => {
             element: <MaterialLanding/>,
         },
         {
-            path: urls.materialList,
+            path: urls.materialList + '/:type',
             element: <MaterialList/>,
         },
         {

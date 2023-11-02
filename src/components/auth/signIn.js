@@ -35,7 +35,7 @@ const SignInPage = (props) => {
                             name="username"
                             rules={[{ required: true, message: 'Please input your Username!' }]}
                         >
-                            <Input prefix={<UserOutlined className="site-form-item-icon" />} placeholder="Username" />
+                            <Input prefix={<UserOutlined className="site-form-item-icon" />} placeholder="Username" size="large" />
                         </Form.Item>
                         <Form.Item
                             name="password"
@@ -45,10 +45,11 @@ const SignInPage = (props) => {
                                 prefix={<LockOutlined className="site-form-item-icon" />}
                                 type="password"
                                 placeholder="Password"
+                                size="large"
                             />
                         </Form.Item>
                         <Form.Item >
-                            <Button type="primary" htmlType="submit" block>
+                            <Button type="primary" htmlType="submit" block size="large">
                                 Log In
                             </Button>
                         </Form.Item>
